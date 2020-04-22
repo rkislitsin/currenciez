@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  resources :currencies
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :currencies, only: [:index, :show]
+  resources :users, param: :_username
 end
