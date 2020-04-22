@@ -1,24 +1,41 @@
-# README
+## Install and run 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+``` bash
+git clone git@github.com:rkislitsin/currenciez.git
+```
 
-Things you may want to cover:
+``` bash
+cd /currensiez
+```
 
-* Ruby version
+``` bash
+bundle install
+```
 
-* System dependencies
+``` bash
+rake db:create && rake db:migrate
+```
 
-* Configuration
+``` bash
+rake currencies:refresh
+```
 
-* Database creation
+### Usage
 
-* Database initialization
+ ##### create user
+ ![create user](public/img/1.png)
 
-* How to run the test suite
+ ##### login user 
+![create user](public/img/2.png)
 
-* Services (job queues, cache servers, search engines, etc.)
+ ##### get currencies (by default returns first page with 10 currencies) 
+ need to pass token returned on login
+![create user](public/img/3.png)
 
-* Deployment instructions
+ ##### get currencies with specified page
+ need to pass token returned on login
+![create user](public/img/5.png)
 
-* ...
+ ##### get currency by :id
+ need to pass token returned on login
+![create user](public/img/4.png)
