@@ -4,7 +4,7 @@ class CurrenciesController < ApplicationController
 
   # GET /currencies
   def index
-    @currencies = Currency.all
+    @currencies = Currency.all.paginate(page: params[:page])
     render json: @currencies
   end
 
