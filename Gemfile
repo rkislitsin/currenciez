@@ -7,6 +7,8 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.2'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bcrypt', '~> 3.1.7'
+gem 'jwt'
 
 group :development, :test do
   gem 'rspec-rails', '~> 4.0.0'
