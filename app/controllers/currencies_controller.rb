@@ -1,4 +1,5 @@
 class CurrenciesController < ApplicationController
+  before_action :authorize_request, except: :create
   before_action :set_currency, only: :show
 
   # GET /currencies
